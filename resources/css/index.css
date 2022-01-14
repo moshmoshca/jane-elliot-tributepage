@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', san-serif;
+}
+
+
+/* Navigation menu */
+
+.navbar {
+	margin: 0px auto;
+	background-color: #F6785F;
+	padding: 20px 10%;
+}
+
+.menu .logo {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: Poppins, san-serif;
+	font-weight: 700;
+  padding-right: 65px;
+  color: #252525;
+}
+
+.navbar li {
+	display: inline-block;
+	padding-right: 40px;
+	font-size: 17px;
+}
+
+.navbar li a {
+	text-decoration: none;
+	color: white;
+}
+
+/* ----------------- Hero section ----------------*/
+
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.hrmonline.com.au/wp-content/uploads/2019/01/weekly-image-1440x800-1.gif");
+	height: 650px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+h1 {
+	font-size: 110px;
+	font-family: Poppins, san-serif;
+    line-height: 1.2em;
+    padding-bottom: 15px;
+}
+
+p {
+	font-size: 20px;
+}
+
+.hero-text {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-30%, -50%);
+	border: 7px solid white;
+	padding: 20px 50px;
+ }
+
+/*----------------- Brief intro information about Jane ----------------------------*/
+
+.intro-history, .block-text {
+	margin: 0 auto;
+	padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	color: #252525;
+	padding-bottom: 20px;
+}
+
+.intro-history .date {
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.intro-history p {
+	line-height: 1.6em;
+}
+
+.intro-history a {
+	color: #2793D7;
+}
+
+/*----------------- Her life ----------------------------*/
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.block-text p {
+    line-height: 1.6em;
+}
+
+
+/* --------------------- Calendar table ----------------------*/
+
+table {
+    border-spacing: 0;
+}
+
+.event-calendar {
+    margin-top: 120px;
+    padding: 10% 15%;
+    background-color: #F6785F;
+}
+
+.calendar-title {
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.calendar-title h2 {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.table-container {
+    margin: 0 auto;
+    width: 680px;
+    
+}
+
+.calendar-table{
+    margin: 0 auto;
+    border: #252525 solid 2px;
+    
+}
+
+th {
+    border: #252525 solid 2px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: #252525;
+    color: white;
+    padding: 15px 20px;
+}
+
+th h3 {
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 700; */
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+td {
+    border: #252525 solid 2px;
+}
+
+tbody td {
+    padding: 15px 20px;
+    text-align: center;
+    background-color: wheat;
+}
+
+/*------------ footer --------------*/
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(233, 204, 142);
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+}
+
+footer span {
+    font-weight: 700;
+}
