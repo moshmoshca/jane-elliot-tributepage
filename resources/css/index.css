@@ -1,11 +1,13 @@
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
 }
 
 body {
 	font-family: 'Roboto', san-serif;
 }
+
 
 
 /* Navigation menu */
@@ -76,6 +78,7 @@ p {
 	padding-top: 5%;
     padding-left: 15%;
     padding-right: 15%;
+    max-width: 90%;
 }
 
 .title {
@@ -107,6 +110,11 @@ h2 {
     font-weight: bold;
     padding-bottom: 20px;
 }
+
+.image-article {
+    height: 400px;
+    display: flex;
+   }
 
 .block-text p {
     line-height: 1.6em;
