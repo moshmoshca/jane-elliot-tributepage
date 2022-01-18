@@ -9,13 +9,20 @@ body {
 }
 
 
-
 /* Navigation menu */
 
 .navbar {
 	margin: 0px auto;
 	background-color: #F6785F;
 	padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+main {
+    position: relative;
+    top: 88px;
 }
 
 .menu .logo {
@@ -73,12 +80,11 @@ p {
 
 /*----------------- Brief intro information about Jane ----------------------------*/
 
-.intro-history, .block-text {
-	margin: 0 auto;
-	padding-top: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
-    max-width: 90%;
+.block-text {
+   margin: 0 auto;
+   padding: 40px 20%;
+   position: relative;
+   top: 60px;
 }
 
 .title {
@@ -87,6 +93,10 @@ p {
 	font-weight: 400;
 	color: #252525;
 	padding-bottom: 20px;
+}
+
+.intro-history{
+    position: relative;
 }
 
 .intro-history .date {
@@ -111,15 +121,33 @@ h2 {
     padding-bottom: 20px;
 }
 
-.image-article {
+
+#her-life .image-article img {
     height: 400px;
-    display: flex;
+    position: relative;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
    }
+
+.image-article .image-p p {
+    width: auto;
+    margin-top: 0;
+}
+
+.image-p .personal{
+    margin-top: 60px;
+}
 
 .block-text p {
     line-height: 1.6em;
 }
 
+#work img {
+    height: 50%;
+    width: 100%;
+    margin: 40px 0;
+}
 
 /* --------------------- Calendar table ----------------------*/
 
