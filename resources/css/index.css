@@ -12,32 +12,40 @@ body {
 /* Navigation menu */
 
 .navbar {
-	margin: 0px auto;
+    display: flex;
+    align-items: center;
+
 	background-color: #F6785F;
-	padding: 20px 10%;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    height: 10%;
+    padding: 0 10%;
+
+    z-index: 1;
 }
 
-main {
-    position: relative;
-    top: 88px;
+.navbar .menu {
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    gap: 4.5rem;
 }
 
 .menu .logo {
-	font-size: 32px;
+	font-size: 3rem;
+    /* line-height: 1.8rem; */
 	text-transform: uppercase;
 	font-family: Poppins, san-serif;
 	font-weight: 700;
-  padding-right: 65px;
-  color: #252525;
+    
+    padding-right: 2rem;
+
+    color: #252525;
 }
 
 .navbar li {
 	display: inline-block;
-	padding-right: 40px;
-	font-size: 17px;
+	font-size: 1.25rem;
 }
 
 .navbar li a {
@@ -54,65 +62,85 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-}
-
-h1 {
-	font-size: 110px;
-	font-family: Poppins, san-serif;
-    line-height: 1.2em;
-    padding-bottom: 15px;
-}
-
-p {
-	font-size: 20px;
+    top: 6rem;
 }
 
 .hero-text {
-	color: white;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+
 	position: absolute;
 	top: 50%;
 	left: 40%;
-	transform: translate(-30%, -50%);
+	transform: translate(-35%, -50%);
+    
+    text-align: center;
+
+    color: white;
 	border: 7px solid white;
-	padding: 20px 50px;
+	padding: 3rem 5rem;
  }
+
+h1 {
+	font-size: 6rem;
+	font-family: Poppins, san-serif;
+    line-height: 1em;
+    padding-bottom: 1.25rem;
+    
+    flex: 1;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
 
 /*----------------- Brief intro information about Jane ----------------------------*/
 
-.block-text {
-   margin: 0 auto;
-   padding: 40px 20%;
-   position: relative;
-   top: 60px;
+.intro-history {
+    position: relative;
+    top: 6rem;
 }
 
-.title {
+.block-text {
+    margin: 0 auto;
+    width: 63%;
+    padding-top: 5.5rem;
+ }
+
+ .title {
 	font-family: 'Poppins', sans-serif;
-	font-size: 35px;
+	font-size: 2rem;
 	font-weight: 400;
 	color: #252525;
-	padding-bottom: 20px;
 }
 
-.intro-history{
-    position: relative;
-}
-
-.intro-history .date {
+.block-text .date { 
 	font-weight: 700;
 	font-size: 36px;
 }
 
-.intro-history p {
+.block-text p {
 	line-height: 1.6em;
 }
 
-.intro-history a {
+.block-text a {
 	color: #2793D7;
 }
 
+
 /*----------------- Her life ----------------------------*/
+
+#her-life {
+    position: relative;
+    top: 6rem;
+}
+
+#her-life .block-text {
+    display: flex;
+    flex-direction: column;
+}
+
 
 h2 {
     font-family: 'Poppins', sans-serif;
@@ -124,11 +152,9 @@ h2 {
 
 #her-life .image-article img {
     height: 400px;
-    position: relative;
     width: 300px;
-    float: left;
     margin-right: 20px;
-   }
+}
 
 .image-article .image-p p {
     width: auto;
