@@ -62,7 +62,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-    top: 6rem;
+    top: 5.8rem;
 }
 
 .hero-text {
@@ -91,11 +91,10 @@ h1 {
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
-
-/*----------------- Brief intro information about Jane ----------------------------*/
+/*--------- Brief intro Jane -------------*/
 
 .intro-history {
     position: relative;
@@ -129,7 +128,7 @@ p {
 }
 
 
-/*----------------- Her life ----------------------------*/
+/*----------------- Her life -------------------*/
 
 #her-life {
     position: relative;
@@ -141,6 +140,16 @@ p {
     flex-direction: column;
 }
 
+.image-article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-article .image-p {
+    flex: 1;
+    width: auto;
+    margin-top: 0;
+}
 
 h2 {
     font-family: 'Poppins', sans-serif;
@@ -152,30 +161,35 @@ h2 {
 
 #her-life .image-article img {
     height: 400px;
-    width: 300px;
-    margin-right: 20px;
-}
-
-.image-article .image-p p {
     width: auto;
-    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.image-p .personal{
+.image-p .personal {
     margin-top: 60px;
 }
 
-.block-text p {
-    line-height: 1.6em;
+/* ----------------- Work Section ------------------ */
+
+#work {
+    position: relative;
+    top: 6rem;
 }
 
+
 #work img {
-    height: 50%;
+    height: auto;
     width: 100%;
     margin: 40px 0;
 }
 
 /* --------------------- Calendar table ----------------------*/
+
+#events {
+    position: relative;
+    top: 6rem;
+}
 
 table {
     border-spacing: 0;
@@ -241,17 +255,31 @@ tbody td {
 /*------------ footer --------------*/
 
 footer {
+    position: relative;
+    top: 6rem;
     text-align: center;
     padding: 40px;
     background-color: rgb(233, 204, 142);
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.3em;
 }
 
 footer span {
     font-weight: 700;
+}
+
+
+/*------------------ Media queries ----------------*/
+/* ----------------------------------------------- */
+
+@media only screen and (min-width: 480px) {
+
+    .menu .logo {
+        background-color: red;
+    }
+
 }
